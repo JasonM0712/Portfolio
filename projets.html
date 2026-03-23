@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projets</title>
     <link rel="stylesheet" href="asset/style.css">
+    <link rel="icon" href="asset/img/Logo.png" type="image/x-icon">
 </head>
 <body>
     <nav class="navigation">
         <div class="barreNav">
             <ul class="conteneurNav">
+                <li><img class="logoNav" src="asset/img/LogoBarNav.png" alt="Logo"></li>
                 <li><a class="lienNav" href="index.html">Accueil</a></li>
                 <li><a class="lienNav" href="experience.html">Expérience</a></li>
                 <li><a class="lienNav" href="projets.html">Projets</a></li>
@@ -22,31 +24,118 @@
             <h1>Mes projets</h1>
             <h2 class="sousTitre">Découvrez mes réalisations en développement web</h2>
         </banner>
-        <section class="presentation">
-            <h2>Présentation</h2>
-            <p>Voici une sélection de projets que j'ai réalisés au cours de ma formation et de mes expériences professionnelles. Ces projets mettent en avant mes compétences en développement web, ma créativité et ma capacité à résoudre des problèmes techniques.</p>
+
+        <section class="projetPresentation">
+                <h2>Présentation</h2>
+                <p>Voici une sélection de projets que j'ai réalisés au cours de ma formation et de mes expériences professionnelles. Ces projets mettent en avant mes compétences en développement web, ma créativité et ma capacité à résoudre des problèmes techniques.</p>
         </section>
 
         <div class="listeProjet">
             <div class="card">
-                <h4>Symfony Book</h4>
-                <img class="imgCard" src="asset/img/symfony_book.png" alt="Symfony Book">
-                <p>Symfony Book est une application web de gestion de bibliothèque développée avec le framework Symfony. Elle permet aux utilisateurs de consulter le catalogue de livres, d'emprunter des ouvrages et de gérer leur compte utilisateur.</p>
-                <button class="buttonSecondary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Voir le projet</button>
+                <div class="contenuCard">
+                    <h4>Symfony Book</h4>
+                    <img class="imgCard" src="asset/img/SymfonyBooks.png" alt="Symfony Book">
+                    <p>Symfony Book est une application web de gestion de bibliothèque développée avec le framework Symfony. Elle permet aux utilisateurs de consulter le catalogue de livres, d'emprunter des ouvrages et de gérer leur compte utilisateur.</p>
+                </div>
+                <button data-modal="modal1" class="buttonSecondary" onclick="openModal()">Voir le projet</button>
             </div>
             <div class="card">
-                <h4>Perle du niara</h4>
-                <img class="imgCard" src="asset/img/perle_du_niara.png" alt="Perle du niara">
-                <p>Perle du niari est un site vitrine pour une association qui aide les enfants défavorisés à accéder à l'éducation et aux ressources nécessaires pour leur développement au Congo.</p>
-                <button class="buttonSecondary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Voir le projet</button>
+                <div class="contenuCard">
+                    <h4>Perle du niara</h4>
+                    <img class="imgCard" src="asset/img/PerleNiari.png" alt="Perle du niara">
+                    <p>Perle du niari est un site vitrine pour une association qui aide les enfants défavorisés à accéder à l'éducation et aux ressources nécessaires pour leur développement au Congo.</p>
+                </div>
+                <button data-modal="modal2" class="buttonSecondary" onclick="openModal()">Voir le projet</button>
             </div>
             <div class="card">
-                <h4>Mike Sylla</h4>
-                <img class="imgCard" src="asset/img/mike_sylla.png" alt="Mike Sylla">
-                <p>Mike Sylla est un site E-Commerce développé avec le framework Symfony. un site de vente en ligne de vêtements luxe hommes, femmes. Il propose une interface conviviale, un catalogue de produits varié et un système de paiement sécurisé.</p>
-                <button class="buttonSecondary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Voir le projet</button>
+                <div class="contenuCard">
+                    <h4>Mike Sylla</h4>
+                    <img class="imgCard" src="asset/img/MikeSyllapng.png" alt="Mike Sylla">
+                    <p>Mike Sylla est un site E-Commerce développé avec le framework Symfony. un site de vente en ligne de vêtements luxe hommes, femmes. Il propose une interface conviviale, un catalogue de produits varié et un système de paiement sécurisé.</p>
+                </div>
+                <button data-modal="modal3" class="buttonSecondary" onclick="openModal()">Voir le projet</button>
             </div>
         </div>
+
+
+        <!-- // Modal -->
+    <div class="modal" id="modal1">
+        <div class="modal-content">
+            <h2>Symfony Book</h2>
+            <p>Symfony Book est une application web de gestion de bibliothèque développée avec le framework Symfony. Elle permet aux utilisateurs de consulter le catalogue de livres, d'emprunter des ouvrages et de gérer leur compte utilisateur.</p>
+
+             <p>Fonctionnalités principales : </p>
+            <ul>
+                <li>Catalogue de livres avec recherche avancée</li>
+                <li>Gestion des emprunts et des retours</li>
+                <li>Interface d'administration pour la gestion des livres et des utilisateurs</li>
+            </ul>
+            <hr>
+            <p>Technologies utilisées : </p>
+            <div class="modal-container-techno">
+                <img class="modal-Techno" src="asset/img/symfony.png" alt="Symfony logo">
+                <img class="modal-Techno" src="asset/img/php.png" alt="PHP logo">
+                <img class="modal-Techno" src="asset/img/mysql.png" alt="MySQL logo">
+                <img class="modal-Techno" src="asset/img/twig.png" alt="Twig logo">
+                <img class="modal-Techno" src="asset/img/bootstrap.png" alt="Bootstrap logo">
+            </div>
+
+            <button class="buttonSecondary"><a href="">Lien github</a></button>
+
+            
+            <div class="close">&times;</div>
+        </div>
+    </div>
+
+    <!-- MODAL 2 -->
+    <div class="modal" id="modal2">
+        <div class="modal-content">
+            <h2>Perle du niari</h2>
+            <p>Perle du niari est un site vitrine pour une association qui aide les enfants défavorisés à accéder à l'éducation et aux ressources nécessaires pour leur développement au Congo.</p>
+
+             <p>Fonctionnalités principales : </p>
+             <ul> 
+                <li>Présentation de l'association et de ses missions</li>
+                <li>Informations sur les projets en cours</li>
+                <li>Possibilité de faire des dons en ligne</li>
+             </ul>
+
+                <hr>
+                <p>Technologies utilisées : </p>
+                <div class="modal-container-techno">
+                    <img class="modal-Techno" src="asset/img/html.png" alt="HTML logo">
+                    <img class="modal-Techno" src="asset/img/css.png" alt="CSS logo">
+                    <img class="modal-Techno" src="asset/img/js.png" alt="JavaScript logo">
+                </div>
+                <button class="buttonSecondary"><a href="">Lien github</a></button>
+
+            <div class="close">&times;</div>
+        </div>
+    </div>
+
+    <!-- MODAL 3 -->
+    <div class="modal" id="modal3">
+        <div class="modal-content">
+            <h2>Mike Sylla</h2>
+            <p>Mike Sylla est un site E-Commerce développé avec le framework Symfony. un site de vente en ligne de vêtements luxe hommes, femmes. Il propose une interface conviviale, un catalogue de produits varié et un système de paiement sécurisé.</p>
+                <p>Fonctionnalités principales : </p>
+                <ul>
+                    <li>Catalogue de produits avec filtres avancés</li>
+                    <li>Gestion des commandes et des paiements</li>
+                    <li>Interface d'administration pour la gestion des produits et des commandes</li>
+                </ul>
+                <hr>
+                <p>Technologies utilisées : </p>
+                <div class="modal-container-techno">
+                    <img class="modal-Techno" src="asset/img/symfony.png" alt="Symfony logo">
+                    <img class="modal-Techno" src="asset/img/php.png" alt="PHP logo">
+                    <img class="modal-Techno" src="asset/img/mysql.png" alt="MySQL logo">
+                    <img class="modal-Techno" src="asset/img/twig.png" alt="Twig logo">
+                </div>
+                <button class="buttonSecondary"><a href="">Lien vers le site</a></button>
+            <div class="close">&times;</div>
+        </div>
+    </div>
 
     </section>
     <script src="asset/script.js"></script>
