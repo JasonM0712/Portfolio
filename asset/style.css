@@ -18,7 +18,7 @@
     position: fixed;
     z-index: 1;
     width: 100%;
-} 
+}
 
 .barreNav {
     margin: 0;
@@ -42,7 +42,7 @@
 
 
 .barreNav .lienNav {
-    color : #7BC2C0;
+    color: #7BC2C0;
     text-decoration: none;
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -61,33 +61,34 @@
 }
 
 .lienNav:hover {
-  color: #008E8D;
+    color: #008E8D;
 }
 
 .body {
     background-color: #031514;
     padding: 4rem 2rem;
     height: 100%;
-    padding-left: 100px ;
+    padding-left: 100px;
     padding-right: 100px;
 }
 
 .banniere {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 20px; ;
+    padding: 20px;
+    ;
     gap: 1rem;
 }
 
-h1{
+h1 {
     font-size: 60px;
     margin-top: 30px;
     padding-bottom: 20px;
-    color : #B3F4BE;
+    color: #B3F4BE;
 }
 
 .sousTitre {
     font-size: 30px;
-    color :#B3F4BE;
+    color: #B3F4BE;
 }
 
 .arrierePlan {
@@ -117,13 +118,13 @@ h1{
     border-radius: 30px;
 }
 
-.presentation h2{
+.presentation h2 {
     font-size: 30px;
-    color : #B3F4BE;
+    color: #B3F4BE;
     margin-bottom: 20px;
 }
 
-.presentation li{
+.presentation li {
     font-size: 20px;
     line-height: 1.5;
 }
@@ -137,18 +138,19 @@ h1{
     justify-content: flex-end;
 
 }
-.about{
-  max-width:700px;
+
+.about {
+    max-width: 700px;
 }
 
-.about p{
-  line-height:1.6;
-  margin-bottom:15px;
+.about p {
+    line-height: 1.6;
+    margin-bottom: 15px;
 }
 
-.about ul{
-    line-height:1.8;
-    padding-left:20px;
+.about ul {
+    line-height: 1.8;
+    padding-left: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -173,7 +175,7 @@ h1{
 
 .parcours h2 {
     font-size: 30px;
-    color : #B3F4BE;
+    color: #B3F4BE;
     margin-bottom: 20px;
 }
 
@@ -223,7 +225,7 @@ h1{
 
 .techno h3 {
     font-size: 25px;
-    color : #B3F4BE;
+    color: #B3F4BE;
 }
 
 .techno p {
@@ -254,7 +256,7 @@ h1{
     gap: 2rem;
     margin-top: 50px;
     margin-right: 80px;
-} 
+}
 
 .buttonPrimary {
     background-color: #008E8D;
@@ -268,7 +270,7 @@ h1{
 }
 
 .buttonSecondary {
-    background-color:#E2F1F1;
+    background-color: #E2F1F1;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     color: #1B4A27;
@@ -278,11 +280,11 @@ h1{
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    margin-top: auto; 
+    margin-top: auto;
 }
 
 .buttonLink {
-    color : #E2F1F1;
+    color: #E2F1F1;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     text-decoration: none;
@@ -303,7 +305,7 @@ h1{
 
 .lienInterressant h3 {
     font-size: 25px;
-    color : #B3F4BE;
+    color: #B3F4BE;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
@@ -336,7 +338,7 @@ h1{
 
 .projetPresentation h2 {
     font-size: 30px;
-    color : #B3F4BE;
+    color: #B3F4BE;
     margin-bottom: 20px;
 }
 
@@ -356,12 +358,12 @@ h1{
     margin-top: 80px;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     height: 510px;
     background-color: #008E8D;
-    border: 1px solid ;
+    border: 1px solid;
     border-radius: 10px;
     padding: 20px;
     width: 350px;
@@ -369,12 +371,12 @@ h1{
 }
 
 .card .contenuCard {
-    flex : 1;
+    flex: 1;
 }
 
 .card h4 {
     font-size: 25px;
-    color : #B3F4BE;
+    color: #B3F4BE;
     margin-bottom: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
@@ -471,7 +473,7 @@ h1{
     margin-bottom: 20px;
 }
 
-.modal-Techno  {
+.modal-Techno {
     width: 40px;
     height: 40px;
     object-fit: contain;
@@ -495,3 +497,108 @@ h1{
 }
 
 
+.timeline{
+    position: relative;
+    margin: 100px auto;
+    padding-left: 80px;
+    max-width: 800px;
+}
+
+/* ligne */
+.timeline::before{
+    content:"";
+    position:absolute;
+    left:20px;
+    top:0;
+    width:2px;
+    top: 20px;
+    height: calc(100% - 20px);
+    background:#2ec4b6;
+}
+
+/* item */
+.item{
+    position: relative;
+    margin-bottom: 60px;
+}
+
+/* cercle */
+.circle{
+    position: absolute;
+
+    left: -66.5px; /* 🔥 LA CLÉ */
+    top: 20px;
+
+    width:16px;
+    height:16px;
+
+    background:#2ec4b6;
+    border-radius:50%;
+
+    box-shadow:0 0 8px #2ec4b6, 0 0 20px rgba(46,196,182,0.5);
+}
+
+.item {
+    position: relative;
+    margin-bottom: 60px;
+}
+/* contenu */
+.content {
+    background: #021f1c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.content h3 {
+    font-family: 'Trebuchet MS', Arial;
+    color: #9fe3b5;
+    margin-bottom: 5px;
+}
+
+.content span {
+    font-family: 'Trebuchet MS', Arial;
+    font-size: 20px;
+    color: #2ec4b6;
+}
+
+.content p {
+    font-family: 'Trebuchet MS', Arial;
+    margin-top: 10px;
+    color: #e6fffa;
+}
+
+/* présentation */
+.experiencePresentation {
+    font-family: 'Trebuchet MS', Arial;
+    font-size: 18px;
+    color: #E2F1F1;
+    margin-bottom: 50px;
+}
+
+@media (max-width:600px) {
+    .timeline {
+        padding-left: 30px;
+    }
+
+    .line {
+        left: 10px;
+    }
+
+    .circle {
+        left: 2px;
+    }
+}
+
+.item {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.6s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
