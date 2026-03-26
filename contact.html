@@ -28,7 +28,7 @@
             <img src="asset/img/photo.png" alt="Photo de contact" class="photoContact">
         </section>
         <section class="contactForm">
-            <form action="#" method="post">
+            <form action="contact.php" method="post">
                 <div class="conteneurForm">
                     <div class="containerForm">
                         <label for="name">Nom:</label>
@@ -40,6 +40,9 @@
                     </div>
                 </div>
                 <div class="formEmail">
+                    <label for="objet">Objet:</label>
+                    <input class="objet" type="text" id="objet" name="objet" required>
+
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
 

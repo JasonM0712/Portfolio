@@ -329,11 +329,19 @@ h1 {
 
 .projetPresentation {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     margin-top: 50px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #B3F4BE;
     width: 100%;
+}
+
+.imgTitleProjet {
+    width: 300px;
+    height: 100px;
+    margin-top: 20px;
+    align-self: center;
 }
 
 .projetPresentation h2 {
@@ -551,26 +559,26 @@ h1 {
 }
 
 .content h3 {
-    font-family: 'Trebuchet MS', Arial;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #9fe3b5;
     margin-bottom: 5px;
 }
 
 .content span {
-    font-family: 'Trebuchet MS', Arial;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
     color: #2ec4b6;
 }
 
 .content p {
-    font-family: 'Trebuchet MS', Arial;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-top: 10px;
     color: #e6fffa;
 }
 
 /* présentation */
 .experiencePresentation {
-    font-family: 'Trebuchet MS', Arial;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 18px;
     color: #E2F1F1;
     margin-bottom: 50px;
@@ -604,7 +612,7 @@ h1 {
 }
 
 .contactForm label {
-    font-family: 'Trebuchet MS', Arial;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #E2F1F1;
 }
 
@@ -649,6 +657,8 @@ h1 {
         gap : 15px;
 }
 
+
+
 .containerForm {
     display: flex;
     flex-direction: column;
@@ -662,10 +672,18 @@ h1 {
 .formEmail{
     display: flex;
     flex-direction: column;
-
     gap: 10px;
 }
 
+.formEmail label {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #E2F1F1;
+}
+
+.formEmail input{
+    width: 100%;
+    margin-bottom: 30px;
+}
 @media (max-width:600px) {    .timeline {
         padding-left: 30px;
     }
