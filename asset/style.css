@@ -755,16 +755,23 @@ h1 {
 }
 
 .navButtonMobile li {
-    color: ;
+    color: #2ec4b6 ;
     list-style: none;
     text-decoration: none;
     margin-top: 30px;
     font-size: 24px;
 }
 
+.navBarreMobile a {
+    color: #2ec4b6;
+    text-decoration: none;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
 .navImgMobile {
-    height: 50px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
 }
 
 @media (max-width:700px) {    .timeline {
@@ -828,6 +835,33 @@ h1 {
         object-fit: cover;
         border-radius: 50%;
         margin-bottom: 20px;
+    }
+
+    .burger {
+        display: block;
+        width: 70px;
+        height: 60px;
+        z-index: 2;
+    }
+
+    .navButtonMobile {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #031514;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .openBurger .navButtonMobile {
+        display: flex;
+    }
+
+    .closeBurger .navButtonMobile {
+        display: none;
     }
 
     .techno {
