@@ -19,6 +19,7 @@
             </ul>
         </div>
     </nav>
+
     <section class="body">
         <section class="contactPresentation">
             <div class="contenuContactPresentation">
@@ -27,29 +28,69 @@
             </div>
             <img src="asset/img/photo.png" alt="Photo de contact" class="photoContact">
         </section>
+
         <section class="contactForm">
-            <form action="contact.php" method="post">
+            <form id="contactForm">
+
+                <!-- Token CSRF injecté par JS au chargement -->
+                <input type="hidden" id="csrf_token" name="csrf_token">
+
                 <div class="conteneurForm">
                     <div class="containerForm">
-                        <label for="name">Nom:</label>
-                        <input type="text" id="name" name="name" required>
+                        <label for="name">Nom :</label>
+                        <input type="text" id="name" name="name" maxlength="100" required>
                     </div>
                     <div class="containerForm">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" maxlength="200" required>
                     </div>
                 </div>
-                <div class="formEmail">
-                    <label for="objet">Objet:</label>
-                    <input class="objet" type="text" id="objet" name="objet" required>
 
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                <div class="formEmail">
+                    <label for="objet">Objet :</label>
+                    <input class="objet" type="text" id="objet" name="objet" maxlength="200" required>
+
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="5" maxlength="5000" required></textarea>
 
                     <button type="submit">Envoyer</button>
                 </div>
+
+                <p id="status-msg" style="margin-top:1rem; display:none;"></p>
             </form>
         </section>
-    
+    </section>
+ <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-left">
+            <img class="logoFooter" src="asset/img/LogoBarNav.png" alt="Logo"></a>
+            <h3>Jason</h3>
+            <p>Développeur web passionné</p>
+            </div>
+
+            <div class="footer-center">
+            <a href="#">Accueil</a>
+            <a href="#">Expérience</a>
+            <a href="#">Projets</a>
+            <a href="#">Contact</a>
+            </div>
+
+            <div class="footer-right">
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Jason - Tous droits réservés</p>
+        </div>
+
+</footer>
+    <script src="asset/script.js">
+
+    </script>
 </body>
 </html>

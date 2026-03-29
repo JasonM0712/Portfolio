@@ -601,6 +601,7 @@ h1 {
     margin-top: 20px;
 }
 
+
 .contactForm {
     display: flex;
     justify-content: center;
@@ -684,7 +685,89 @@ h1 {
     width: 100%;
     margin-bottom: 30px;
 }
-@media (max-width:600px) {    .timeline {
+
+.footer{
+  background:#021f1c;
+  color:#e6fffa;
+  padding:40px 10%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.footer-container{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  flex-wrap:wrap;
+}
+
+.footer-left h3{
+  color:#2ec4b6;
+  margin-bottom:10px;
+}
+
+.footer-left img{
+  width:100px;
+  height:30px;
+
+  margin-bottom:15px;
+}
+
+.footer-center a,
+.footer-right a{
+  display:block;
+  color:#e6fffa;
+  text-decoration:none;
+  margin-bottom:8px;
+  transition:0.3s;
+}
+
+.footer-center a:hover,
+.footer-right a:hover{
+  color:#2ec4b6;
+}
+
+.footer-bottom{
+  text-align:center;
+  margin-top:30px;
+  border-top:1px solid rgba(255,255,255,0.1);
+  padding-top:15px;
+  font-size:14px;
+}
+
+.imgPresentationMobile {
+    display: none;
+}
+
+.navBarreMobile {
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #031514;
+    width: 100%;
+    z-index: 1;
+}
+
+.navBarreMobile ul {
+    list-style: none;
+}
+
+.navButtonMobile li {
+    color: ;
+    list-style: none;
+    text-decoration: none;
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.navImgMobile {
+    height: 50px;
+    width: 80px;
+}
+
+@media (max-width:700px) {    .timeline {
         padding-left: 30px;
     }
 
@@ -695,6 +778,168 @@ h1 {
     .circle {
         left: 2px;
     }
+}
+
+@media (max-width: 700px) {
+    .barreNav{
+        display: none;
+    }
+
+    .navBarreMobile {
+        display: flex;
+    }
+
+    .arrierePlan {
+        background-image: none;
+    }
+
+    .presentation {
+        flex-direction: column;
+        text-align: center;
+    } 
+
+    .imgPresentation {
+        display: none;
+    } 
+
+    .imgPresentationMobile {
+        display: block;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    } 
+
+    .parcours {
+        flex-direction: column;
+        text-align: center;
+    } 
+
+    .conteneurParcours {
+        margin-top: 20px;
+        width: 300px;
+    } 
+
+    .imgParcours{
+        display: block;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    .techno {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .articleTechno {
+        margin-right: 0;
+    } 
+
+    .footer {
+        text-align: center;
+    } 
+
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    } 
+
+    .footer-left {
+        order: 2;
+    } 
+
+    .footer-center {
+        order: 3;
+    }
+    .footer-right {
+        order: 4;
+    } 
+
+    .projetPresentation {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .projetPresentation img{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .modal-content {
+        width: 90%;
+        height: auto;
+    }
+
+    .modal-container-techno {
+        justify-content: center;
+    } 
+
+    .contactPresentation {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactPresentation img {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .contactForm {
+        width: 100%;
+    }
+
+    .conteneurForm {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navigation {
+        padding: 1rem;
+    }
+
+    .conteneurNav {
+        gap: 1rem;
+    } 
+
+
+    .lienNav {
+        font-size: 18px;
+        padding: 0.5rem;
+    }
+
+    .body {
+        padding: 2rem;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .formEmail {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formEmail input {
+        width: 300px;
+    }
+
+    .formEmail textarea {
+        width: 300px;
+    }
+
 }
 
 .item {
