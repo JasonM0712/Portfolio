@@ -754,6 +754,7 @@ h1 {
     list-style: none;
 }
 
+
 .navButtonMobile li {
     color: #2ec4b6 ;
     list-style: none;
@@ -805,6 +806,22 @@ h1 {
         text-align: center;
     } 
 
+    .presentation .conteneurPresentation {
+        margin-top: 20px;
+        width: 300px;
+    }
+
+    .conteneurPresentation li{ 
+        padding: 10px;
+        
+    } 
+
+    .conteneurParcours li {
+        padding: 5px;
+    }
+
+
+
     .imgPresentation {
         display: none;
     } 
@@ -850,17 +867,23 @@ h1 {
         top: 60px;
         left: 0;
         width: 100%;
+        height: 100vh;
         background-color: #031514;
         flex-direction: column;
         align-items: center;
         gap: 20px;
     }
 
-    .openBurger .navButtonMobile {
+    .navButtonMobile a{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 24px;
+    }
+
+    .OpenBurger {
         display: flex;
     }
 
-    .closeBurger .navButtonMobile {
+    .CloseBurger {
         display: none;
     }
 
