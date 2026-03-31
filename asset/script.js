@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         button.addEventListener("click", function () {
             const modalId = this.getAttribute("data-modal");
             const modal = document.getElementById(modalId);
-            if (modal) modal.style.display = "block";
+            if (modal) modal.style.display = "flex";
         });
     });
 
